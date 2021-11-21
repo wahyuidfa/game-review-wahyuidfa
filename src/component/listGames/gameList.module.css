@@ -1,0 +1,76 @@
+@import url('http://fonts.cdnfonts.com/css/mismo');
+
+/* @media screen and (max-width: 720px) {
+    .container {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+  } */
+
+  .container{
+    margin-top: 20px;
+    background-color:#0f0f0f;
+    /* height: 10vh */
+    
+    
+  }
+
+
+  .gameListContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .divBox {
+    width: 20%;
+    padding-bottom: 10px ;
+    border-radius: 5px;
+    box-shadow: hsl(267 95% 76% / 0.6) 0px 1px 15px;
+    overflow: hidden;
+    text-align: left;
+    background-color:  rgba(187,134,252, 0.2) ;
+    /* height: 0vh; */
+    
+  }
+
+  .divBox:hover {
+    box-shadow: hsl(267 95% 76% / 1) 0px 1px 15px ;
+    /* width: 20.5%; */
+    
+  }
+
+  
+  .imgContainer {
+    /* height: 280px; */
+    overflow: hidden;
+  }
+  .imgPoster {
+    width: 100%;
+  }
+  
+.gameInfo {
+  width: 100%;
+  
+}
+
+  .title {
+    font-family: 'Mismo', sans-serif;
+    color: #B2B1B9
+  }
+
+  .genre {
+    color: #B2B1B9;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+   .pagination {
+    background-color:  rgba(187,134,252, 0.2) ;
+    border-radius: 10px;
+     /* color  : blanchedalmond !important; */
+     box-shadow: hsl(267 95% 76% / 1) 0px 1px 15px;
+   }

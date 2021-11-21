@@ -1,0 +1,73 @@
+.container{
+    margin-top: 20px;
+    background-color:#0f0f0f;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* height: 10vh */
+     
+  }
+
+.boxContainerLeftSide {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.divBox {
+    width: 20%;
+    padding-bottom: 10px ;
+    border-radius: 5px;
+    box-shadow: hsl(267 95% 76% / 0.6) 0px 1px 15px;
+    overflow: hidden;
+    /* text-align: left; */
+    background-color:  rgba(187,134,252, 0.2) ;
+    /* height: 0vh; */
+    
+  }
+.navBottomBtn:active {
+    transform: scale(0.98);
+}
+
+.navBottomBtn:focus {
+    background-color:  rgb(3,218,198, 0.2) ;
+    border-radius: 8px;
+    font-size: 16.5px;
+    box-shadow:hsl(174.4 97.3% 43.3% / 1) 0px 1px 15px;
+    /* outline: #9f9f9f !important; */
+}
+
+.navBottomBtn:hover {
+    background-color: rgb(3,218,198, 0.2) ;
+    border-radius: 8px;
+    font-size: 16.5px;
+    box-shadow: hsl(174.4 97.3% 43.3% / 0.6) 0px 1px 15px;
+}
+
+.headingNavBottom h4{
+    font-family: 'Mismo', sans-serif;
+    color: #B2B1B9;
+}
+
+.imgContainer {
+    /* height: 280px; */
+    overflow: hidden;
+  }
+  .imgPoster {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  }
+  
+.gameInfo {
+  width: 100%;
+  
+}
+
+  .title {
+    font-family: 'Mismo', sans-serif;
+    color: #B2B1B9
+  }

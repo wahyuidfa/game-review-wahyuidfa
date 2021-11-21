@@ -1,0 +1,59 @@
+@import url('http://fonts.cdnfonts.com/css/mismo');
+.homeContainer {
+    width: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.boxContainerLeftSide {
+    width: 15%;
+    padding-left: 40px;
+    /* border-right: solid #B2B1B9; */
+}
+
+.navBottomBtn {
+    list-style: none;
+    /* height: 35px;     */
+    line-height: 40px;
+    cursor: pointer;
+    align-content: center;
+    margin-left: -40px;
+    padding-left: 20px;
+    width: 170px;
+    transition-duration: 0.3s ease;
+    transition-property: transform;
+    color:#B2B1B9 ;
+    /* background-color:  rgba(187,134,252, 0.2) ; */
+}
+.navBottomBtn:active {
+    transform: scale(0.98);
+}
+
+.navBottomBtn:focus {
+    background-color:  rgb(3,218,198, 0.2) ;
+    border-radius: 8px;
+    font-size: 16.5px;
+    box-shadow:hsl(174.4 97.3% 43.3% / 1) 0px 1px 15px;
+    /* outline: #9f9f9f !important; */
+}
+
+.navBottomBtn:hover {
+    background-color: rgb(3,218,198, 0.2) ;
+    border-radius: 8px;
+    font-size: 16.5px;
+    box-shadow: hsl(174.4 97.3% 43.3% / 0.6) 0px 1px 15px;
+}
+
+.headingNavBottom h4{
+    font-family: 'Mismo', sans-serif;
+    color: #B2B1B9;
+}
+
+.listGameContainer {
+    width: 100%;
+    justify-content: center;
+}

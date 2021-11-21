@@ -1,0 +1,107 @@
+@import url('http://fonts.cdnfonts.com/css/games');
+@import url('http://fonts.cdnfonts.com/css/mismo');
+
+.footerContainer {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 50px 40px; */
+    flex-wrap: wrap;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    border-top: solid  #B2B1B9;
+    ;
+}
+
+.footerContentContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-right: 20px;
+}
+
+.footerContentContainer div p {
+    color: #fff;
+    font-family: 'Mismo', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footerContentContainer div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerContentContainer div ul li {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    /* font-family: "Nunito", sans-serif; */
+    padding-top: 8px;
+    font-weight: normal;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+
+}
+
+.footerLogoContainer {
+    width: 100%;
+    /* margin-left: 20px; */
+    font-family: 'Games', sans-serif;
+}
+.footerLogoContainer p {
+    width: 100%;
+    font-size: 35px;
+    background-image: linear-gradient(
+          45deg,
+          #bb86fc 16.666%, 
+          #6200ee 16.666%, 
+          #6200ee 33.333%, 
+          #03dac6 3.333%, 
+          #03dac6 50%, 
+          #ffffff 50%, 
+          #ffffff 66.666%, 
+          #cf6679 66.666%, 
+          #cf6679 83.333%, 
+          #bb86fc 83.333%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.copyright {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+.sosmedFooter {
+    margin-top: 30px;
+}
+
+.sosmedFooter svg {
+    margin-right: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,215 @@
+@import url('http://fonts.cdnfonts.com/css/games');
+@import url('http://fonts.cdnfonts.com/css/mismo');
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    justify-content: space-around;
+    /* padding: 0px 100px 0px 100px;
+     */
+     background-color:#0f0f0f ;
+     z-index: 1;
+     height: 65px;
+   
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.leftbar {
+    display: flex;
+    align-items: center;
+    /* gap: 25px; */
+    height: 50px;
+    /* margin-left: 150px; */
+    /* font-size: 40px; */
+    /* font-family: 'Mismo', sans-serif; */
+                                                
+    font-family: 'Games', sans-serif;
+    /* background-color: white; */
+    /* width: 100px; */
+    height: 60px;
+}
+
+/* .le {
+    height: 40px;
+    margin-top: -30px;
+
+} */
+
+.leftbar p {
+     /* background-color: #FFD523; */
+  
+    /* Create the gradient. */
+     background-image: linear-gradient(
+          45deg,
+          #bb86fc 16.666%, 
+          #6200ee 16.666%, 
+          #6200ee 33.333%, 
+          #03dac6 3.333%, 
+          #03dac6 50%, 
+          #ffffff 50%, 
+          #ffffff 66.666%, 
+          #cf6679 66.666%, 
+          #cf6679 83.333%, 
+          #bb86fc 83.333%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  
+    font-size: 35px;
+    /* line-height: 5px; */
+}
+
+.leftbar p:hover
+ {
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+ }
+
+ @keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 690%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+ @keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 690%;
+    }
+}
+.rightbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;   
+    /* margin-right: 150px; */
+    font-family: 'Mismo', sans-serif;
+    position: relative;   
+    list-style-type: none;  
+    float: right;                                      
+}
+
+.item {
+    color: #B2B1B9;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-weight: 400;
+    font-size: 20px;
+    list-style-type: none;  
+}
+
+
+.btn {
+    display: none;
+    position: absolute;
+}
+
+@media screen and (max-width:720px) {
+.navbarContainer {
+    justify-content:center
+    /* flex-direction: column; */
+    /* background: rgba(0, 0, 0, 0.4); */
+    
+}
+  
+    .leftbar {
+      display: flex;
+      position: absolute;
+      margin-left: 0px;
+      
+  }
+
+  .pictureBar {
+      /* text-align: center; */
+      margin-left: 0px;
+      display: flex;
+      position: absolute;
+      margin-left: 0px;
+  }
+   
+    .rightbar {
+        /* width: 100%;
+        flex-direction: column;
+        height: auto; */
+        /* text-align: center; */
+        /* width: 100%; */
+        /* align-items: center; */
+        /* align-content: center; */
+        /* justify-content: center; */
+        /* margin-right: 35px; */
+        /* background-color: rgba(0, 0, 0, 0.8) */
+        display: none
+    }
+
+    .rightbarMobile {
+
+        /* ma-top: 5  0px; */
+        position:absolute;
+        display: block;
+        list-style-type: none;
+        background: #6200ee;
+        /* left: 0px; */
+        /* right: 0px; */
+        justify-content: center;
+        top: 70px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        font-family: 'Mismo', sans-serif;
+        /* margin-left: -50px;  */
+    }
+
+    /* item:nth-child(1) {
+        border-top: 1px solid #bb86fc;
+    } */
+    .item {
+        padding-top: 60px;
+        margin-left: -25px;
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        /* padding: 30px; */
+        transition: all 0.5s ease;
+        font-family: 'Mismo', sans-serif;
+        /* position: fixed; */
+        flex-direction: column;
+
+    }
+    .btn {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: auto;
+        right: 30px;
+
+    }
+
+
+}
+
+
+
