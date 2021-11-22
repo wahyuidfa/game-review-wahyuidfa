@@ -47,7 +47,14 @@
     box-shadow: hsl(174.4 97.3% 43.3% / 0.6) 0px 1px 15px;
 }
 
-.headingNavBottom h4{
+.headingNavBottom {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-bottom: solid #B2B1B9;
+}
+.headingNavBottom h2{
     font-family: 'Mismo', sans-serif;
     color: #B2B1B9;
 }
@@ -70,4 +77,33 @@
   .title {
     font-family: 'Mismo', sans-serif;
     color: #B2B1B9
+  }
+
+  .genreLIst {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+   .container {
+     width: 100%;
+   }
+   
+    .divBox {
+      width: 25%;
+    }
+   }
+
+   @media only screen and (max-width: 425px) {
+    .divContainer {
+      width:80%;
+      
+    }
+    .divBox {
+      width: 80%;
+    }
+
+    /* .pagination {
+      width: 80% ;
+      font-size: 12px;
+    } */
   }

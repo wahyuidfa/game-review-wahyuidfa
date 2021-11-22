@@ -19,13 +19,14 @@ function Genre() {
             <Navbar/>
             <div className={styles.container}>
                 <div className={styles.boxContainerLeftSide}>
-                    {/* <div className={styles.headingNavBottom}>
-                        <h4>Genre</h4> */}
-                        {/* <div className={styles.genresList}> */}
+                    <div className={styles.headingNavBottom}>
+                        <h2>Genre</h2> 
+                        </div>
+                        {/* <div className={styles.genresList}>  */}
                             {genreList.map((genres) => (
                                 <div key={genres.id} className={styles.divBox}>
                                     <Link
-                                        to={`/genre/${genres.id}`}
+                                        to={`/listgenre/${genres.slug}`}
                                         style={{ textDecoration: "none" }}
                                     >
                                         <div className={styles.imgContainer}>

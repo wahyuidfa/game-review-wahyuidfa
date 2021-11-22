@@ -115,6 +115,17 @@
     float: right;                                      
 }
 
+.rightbarMobile {
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;   
+    /* margin-right: 150px; */
+    font-family: 'Mismo', sans-serif;
+    position: relative;   
+    list-style-type: none;  
+    float: right;       
+}
 .item {
     color: #B2B1B9;
     /* font-family: 'Ubuntu', sans-serif; */
@@ -172,7 +183,7 @@
         position:absolute;
         display: block;
         list-style-type: none;
-        background: #6200ee;
+        /* background: #6200ee; */
         /* left: 0px; */
         /* right: 0px; */
         justify-content: center;
@@ -181,6 +192,7 @@
         width: 100%;
         font-family: 'Mismo', sans-serif;
         /* margin-left: -50px;  */
+        background-color: black;
     }
 
     /* item:nth-child(1) {
@@ -197,6 +209,9 @@
         font-family: 'Mismo', sans-serif;
         /* position: fixed; */
         flex-direction: column;
+        background-color:  rgba(15, 15, 15, 0.9);
+        /* opacity: 0.5; */
+        width: 720px;
 
     }
     .btn {

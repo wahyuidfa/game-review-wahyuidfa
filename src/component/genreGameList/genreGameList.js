@@ -1,28 +1,30 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getGameListAsync } from "../../redux/action";
-import getGameListReducer from "../../redux/reducers/gameListReducer";
+import { getGamelistByGenreAsync } from "../../redux/action";
+import getGamelistByGenreReducer from "../../redux/reducers/gamelistByGenreReducer"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./gameList.module.css";
+import styles from "./genreGameList.module.css";
 import Pagination from "@mui/material/Pagination";
 import { Stack } from "@mui/material";
 import Rating from '@mui/material/Rating';
+import { useParams } from "react-router";
 // import Stack from '@mui/material/Stack';
 
-function ListGames() {
+function GenreGameList() {
     const dispatch = useDispatch();
-    const { gameList, loading } = useSelector((state) => state.getGameListReducer);
-    const [page, setPage] = useState("1")
+    const { gameListByGenre, loading } = useSelector((state) => state.getGamelistByGenreReducer);
+    const [pageGenres, setPageGenres] = useState(1)
+    let { nameGenres } = useParams();
 
     const handleChange = (e, value) => {
-        setPage(value)
-        console.log(page,"test page")
+        setPageGenres(value)
+        console.log(pageGenres,"test page")
     }
-    
+    console.log(nameGenres, "test")
     useEffect(() => {
-        dispatch(getGameListAsync(page));
-    }, [dispatch, page]);
+        dispatch(getGamelistByGenreAsync(nameGenres, pageGenres));
+    }, [dispatch, nameGenres, pageGenres]);
 
     return (
         <div className={styles.container}>
@@ -34,9 +36,9 @@ function ListGames() {
                 ) : (
                     ""
                 )}
-                {gameList.map((game) => (
+                {gameListByGenre.map((game) => (
                     <div key={game.id} className={styles.divBox}>
-                        <Link to={`/game-detail/${game.slug}`} style={{ textDecoration: "none" }}>
+                        <Link to={`/game-detail/${game.id}`} style={{ textDecoration: "none" }}>
                             <div className={styles.imgContainer}>
                                 <img
                                     className={styles.imgPoster}
@@ -60,7 +62,7 @@ function ListGames() {
                 ))}
             <div className={styles.pagination}>
                 <Stack sx={{ color: "GrayText" }}>
-                  <Pagination count={32146} onChange={handleChange} variant="outlined" color="primary" />
+                  <Pagination count={100} onChange={handleChange} variant="outlined" color="primary" />
                 </Stack>
             </div>
             </div>
@@ -68,4 +70,4 @@ function ListGames() {
     );
 }
 
-export default ListGames;
+export default GenreGameList;

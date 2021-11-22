@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
     const [isMobile, setIsMobile] = useState(false);
 
+    useEffect (() => {
+       window.innerWidth.valueOf()
+    }, [])
+
+    
     return (
         <nav className={styles.navbarContainer}>
             <div className={styles.leftbar}>
